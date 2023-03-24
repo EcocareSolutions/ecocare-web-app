@@ -19,5 +19,7 @@
   allows us to tap into a wide range of experienced experts to undertake various consultancy assignments.
 </div></template>
 
-<script lang="ts" setup>
+<script lang="ts">
+export default {
+  data: () => ({})}
 </script>
