@@ -1,7 +1,13 @@
 <template>
-  <div>
+  <v-container>
+    <v-parallax height="40vh" src="@/assets/audit.png"
+      class="mb-4 mt-16 text-center align-center justify-center d-flex">
+      <v-sheet height="40vh" style="background: rgb(37,185,27);
+            background: linear-gradient(90deg, rgba(37,185,27,1) 35%, rgba(255,255,255,0) 100%);" class="d-flex align-center">
+        <v-container class="text-h3 font-weight-black d-flex align-center text-white">Our services include</v-container>
+      </v-sheet>
+    </v-parallax>
     <v-sheet class="mt-16">
-      <v-sheet class="text-h2 font-weight-black mb-4">Our services include:</v-sheet>
       <v-slide-group v-model="model" class="pa-4" selected-class="bg-secondary" show-arrows>
         <v-slide-group-item v-for="n in services" :key="n" v-slot="{ toggle, selectedClass }">
           <v-card color="rgb(0, 87, 140, 0.5)" :class="['ma-4', selectedClass]" height="200" width="200" @click="toggle"
@@ -29,7 +35,13 @@
       setting, water testing, environment management plans, safety and health.
     </v-sheet>
 
-    <v-sheet class="text-h2 font-weight-black mb-4 pt-16 mt-16">Our training programs cover the following topics:</v-sheet>
+    <v-parallax height="40vh" src="@/assets/training.png"
+      class="mb-4 mt-16 text-center align-center justify-center d-flex">
+      <v-sheet height="40vh" style="background: rgb(37,185,27);
+            background: linear-gradient(90deg, rgba(37,185,27,1) 35%, rgba(255,255,255,0) 100%);" class="d-flex align-center">
+        <v-container class="text-h3 font-weight-black d-flex align-center text-white">Our training programs covers</v-container>
+      </v-sheet>
+    </v-parallax>
     <v-sheet>
       <v-slide-group v-model="model2" class="pa-4" selected-class="bg-primary" show-arrows>
         <v-slide-group-item v-for="n in thematic" :key="n" v-slot="{ toggle, selectedClass }">
@@ -58,7 +70,7 @@
       workplace and societal challenges with confidence.
     </v-sheet>
 
-  </div>
+  </v-container>
 </template>
 
 <script lang="ts">

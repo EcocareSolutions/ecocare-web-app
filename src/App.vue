@@ -23,7 +23,6 @@
     </v-app-bar>
 
     <v-main>
-      <v-container style="padding-bottom: 0;">
         <v-row>
           <v-col>
             <v-sheet min-height="70vh" rounded="lg">
@@ -31,7 +30,6 @@
             </v-sheet>
           </v-col>
         </v-row>
-      </v-container>
     </v-main>
 
     <v-footer color="secondary">
@@ -76,7 +74,7 @@ export default {
     links: [
       {
         name: 'Home',
-        href: 'home',
+        href: '/',
       },
       {
         name: 'About',

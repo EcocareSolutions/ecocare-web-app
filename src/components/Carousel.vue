@@ -1,18 +1,18 @@
 <template>
-    <v-row>
-      <v-carousel hide-delimiter-background height="87vh" progress="primary" show-arrows="hover" cycle>
-        <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide.src" cover class="align-end">
-          <v-row no-gutters>
-            <v-col class="offset-8 justify-end pr-10" cols="4" style="display: flex;">
-              <v-sheet height="90vh" :width="250" class="pa-4 align-center"
-                style="background-color: rgb(43, 145, 42, 0.6); color: #fff; display: flex;">
-                <div style="align-self: center;" class="text-h4 font-weight-black text-center">{{ slide.desc }}</div>
-              </v-sheet>
-            </v-col>
-          </v-row>
-        </v-carousel-item>
-      </v-carousel>
-    </v-row>
+  <v-row class="mt-0">
+    <v-carousel hide-delimiter-background height="70vh" progress="primary" show-arrows="hover" cycle>
+      <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide.src" cover class="align-center">
+        <v-row no-gutters class="d-flex justify-start pa-16">
+          <v-container>
+            <v-sheet :width="450" :height="250" class="d-flex pa-4 align-center"
+              style="background-color: rgb(43, 145, 42, 0.6); color: #fff;">
+              <div class="text-h2 font-weight-black text-start">{{ slide.desc }}</div>
+            </v-sheet>
+          </v-container>
+        </v-row>
+      </v-carousel-item>
+    </v-carousel>
+  </v-row>
 </template>
 
 <script lang="ts">
@@ -29,27 +29,27 @@ export default {
         {
           name: 'dam',
           src: dam,
-          desc: 'Do you have an EMA certification as you start building a dam on your farm?',
+          desc: 'Dam Construction',
         },
         {
           name: 'effluent',
           src: effluent,
-          desc: 'Where does the effluent from your industrial processes go to? Are you not contributing to water pollution?',
+          desc: 'Manufacturing Plants',
         },
         {
           name: 'generator',
           src: generator,
-          desc: 'Did you know you need a certified EIA to assign a license to your generator if its rated 5Kva and above?',
+          desc: 'Heavy Duty Equipment',
         },
         {
           name: 'mine',
           src: mine,
-          desc: 'Are you practicing eco-friendly mining yet have no certification to show compliance?',
+          desc: 'Mining',
         },
         {
           name: 'waste',
           src: waste,
-          desc: 'ISO:9001 requires your organization to adhere to set waste management standards. Are you complying?',
+          desc: 'Waste Collection',
         },
       ],
     }

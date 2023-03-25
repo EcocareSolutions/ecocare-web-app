@@ -19,12 +19,41 @@
         </v-card-text>
       </v-card>
     </v-row>
-
-    <v-sheet class="text-h6 font-weight-black mt-4 pa-4 bg-secondary">
-      To complete all of its assignments, Ecocare Solutions assembles a team of qualified and experienced researchers,
-      trainers, and subject matter experts.
-    </v-sheet>
   </v-container>
+  <v-sheet class="bg-primary">
+    <v-container>
+      <v-container class="text-h2 font-weight-black d-flex align-center text-white justify-center">Why Choose Ecocare
+        Solutions</v-container>
+      <v-container>
+        <v-row no-gutters>
+          <v-col cols="12" sm="4" class="d-flex align-center justify-center pa-8 text-h6 flex-column font-weight-light">
+            <v-icon size="x-large" icon="mdi-cash-multiple"></v-icon>
+            Value for Money
+          </v-col>
+          <v-col cols="12" sm="4" class="d-flex align-center justify-center pa-8 text-h6 flex-column font-weight-light">
+            <v-icon size="x-large" icon="mdi-account-group"></v-icon>
+            Customer Centric
+          </v-col>
+          <v-col cols="12" sm="4" class="d-flex align-center justify-center pa-8 text-h6 flex-column font-weight-light">
+            <v-icon size="x-large" icon="mdi-shield-check"></v-icon>
+            Integrity
+          </v-col>
+          <v-col cols="12" sm="4" class="d-flex align-center justify-center pa-8 text-h6 flex-column font-weight-light">
+            <v-icon size="x-large" icon="mdi-hand-heart"></v-icon>
+            Trust
+          </v-col>
+          <v-col cols="12" sm="4" class="d-flex align-center justify-center pa-8 text-h6 flex-column font-weight-light">
+            <v-icon size="x-large" icon="mdi-head-heart"></v-icon>
+            Fair
+          </v-col>
+          <v-col cols="12" sm="4" class="d-flex align-center justify-center pa-8 text-h6 flex-column font-weight-light">
+            <v-icon size="x-large" icon="mdi-nature-people"></v-icon>
+            Sustainable
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-container>
+  </v-sheet>
 </template>
 
 <script lang="ts">
@@ -34,32 +63,22 @@ export default {
       {
         name: 'Theophilus',
         qualification: 'Masters Degrees in Monitoring and Evaluation and an executive certificates in program Monitoring and Evaluation',
-        position: 'Monitoring and Evaluation',
-      },
-      {
-        name: '',
-        qualification: 'Masters Degrees in Monitoring and Evaluation and executive certificates in program Monitoring and Evaluation',
-        position: 'Monitoring and Evaluation',
+        position: 'Team Leader',
       },
       {
         name: '',
         qualification: 'PHD in Environmental Management',
-        position: 'Environmental Management',
+        position: 'Environmentalist',
       },
       {
         name: '',
         qualification: 'Masters Degree in Public Health',
-        position: 'Public Health',
-      },
-      {
-        name: '',
-        qualification: 'Master of Science degree in Sanitation and Wastewater Management',
-        position: 'WASH',
+        position: 'Social Scientist',
       },
       {
         name: '',
         qualification: 'Degree in Biotechnology',
-        position: 'Biotechnology',
+        position: 'Biotechnician',
       },
       {
         name: '',

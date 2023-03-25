@@ -1,5 +1,4 @@
 <template>
-  <Carousel />
   <Who />
   <Partners />
   <Methodology />
@@ -7,7 +6,6 @@
 </template>
 
 <script lang="ts" setup>
-import Carousel from '@/components/Carousel.vue'
 import Who from '@/components/Who.vue'
 import Partners from '@/components/Partners.vue'
 import Methodology from '@/components/Methodology.vue'
